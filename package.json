@@ -1,0 +1,18 @@
+{
+  "name": "porfoliowebsite",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "npx @tailwindcss/cli -i ./src/src.css -o ./public/styles.css",
+    "watch": "npx @tailwindcss/cli -i ./src/src.css -o ./pubic/styles.css --watch"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@tailwindcss/cli": "^4.1.14",
+    "init": "^0.1.2",
+    "tailwindcss": "^4.1.14"
+  }
+}

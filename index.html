@@ -1,0 +1,475 @@
+<!Doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Roland Zogbay - Web Developer, UI/UX Designer, Frontend Developer, Problem Solver, and Graphic Designer. Check out my portfolio and projects.">
+  <meta name="author" content="Roland Zogbay">
+  <meta name="keywords" content="Web Developer, Frontend Developer, UI/UX Designer, Portfolio, Graphic Designer, Problem Solver">
+  <meta name="robots" content="index, follow">
+    <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Roland Zogbay Portfolio">
+  <meta property="og:description" content="Check out my portfolio showcasing web development, UI/UX design, and projects.">
+  <meta property="og:image" content="./src/assets/img2.jpg">
+  <meta property="og:url" content="">
+  <meta property="og:site_name" content="Roland Zogbay Portfolio">
+
+  <title>Roland Zogbay — Web Developer & Designer</title>
+  <!-- Favicon Link -->
+   <link rel="shortcut icon" href="./src/assets/Contemporary 'RZ' Logo in Navy and Yellow.jpg" type="image/x-icon">
+  <!-- Tailwind custom link -->
+  <link href="./public/styles.css" rel="stylesheet">
+  <!-- Fontawesome cdn -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- Tailwind CDN (utility-first) -->
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-[#0F172A] text-[#F8FAFC] antialiased leading-relaxed scroll-smooth">
+   <!-- Onloading effect -->
+    <div id="preloader"
+     class="fixed inset-0 z-50 flex items-center justify-center bg-[#0F172A] transition-opacity duration-500 ease-out">
+        <div class="flex flex-col items-center">
+            <div id="logo"
+                class="w-20 h-20 rounded-full flex items-center justify-center text-2xl font-bold bg-gradient-to-tr from-[#1E293B] to-[#0F172A] animate-pulse">
+            RZ
+            </div>
+            <p class="mt-4 text-sm text-slate-400">Loading portfolio...</p>
+        </div>
+    </div>
+    <!-- Navigation section -->
+    <header id="navbar" class="fixed top-0 left-0 right-0 z-40 transition-all duration-300">
+        <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex items-center justify-between">
+            <a href="#home" class="flex items-center gap-3">
+                <div class="w-10 h-10 rounded-full flex items-center justify-center bg-amber-500  font-bold">RZ</div>
+                <span class="hidden sm:inline font-semibold sm:text-xl md:text-2xl">Roland Zogbay</span>
+            </a>
+
+            <div class="hidden md:flex font-bold  items-center gap-6">
+                <a href="#about" class="nav-link text-base hover:text-amber-400 transition ease-in tracking-wider uppercase">About</a>
+                <a href="#skills" class="nav-link text-base hover:text-amber-400 transition ease-in tracking-wider uppercase">Skills</a>
+                <a href="#services" class="nav-link text-base hover:text-amber-400 transition ease-in tracking-wider uppercase">Services</a>
+                <a href="#projects" class="nav-link text-base hover:text-amber-400 transition ease-in tracking-wider uppercase">Projects</a>
+                <a href="#contact" class="nav-link text-base hover:text-amber-400 transition ease-in tracking-wider uppercase">Contact</a>
+                
+            </div>
+        <!-- Mobile hamburger  menu -->
+            <div class="md:hidden">
+                <button id="menuBtn" class="p-2 rounded font-bold text-3xl" aria-label="Open menu">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-10">
+                        <path fill-rule="evenodd" d="M3 6.75A.75.75 0 0 1 3.75 6h16.5a.75.75 0 0 1 0 1.5H3.75A.75.75 0 0 1 3 6.75ZM3 12a.75.75 0 0 1 .75-.75h16.5a.75.75 0 0 1 0 1.5H3.75A.75.75 0 0 1 3 12Zm0 5.25a.75.75 0 0 1 .75-.75h16.5a.75.75 0 0 1 0 1.5H3.75a.75.75 0 0 1-.75-.75Z" clip-rule="evenodd" />
+                    </svg>
+                </button>
+            </div>
+        </nav>
+
+        <!-- Mobile menu -->
+        <div id="mobileMenu" class="md:hidden bg-[#0F172A] border-t border-slate-800 hidden transition-all duration-300 ease-in-out">
+            <div class="px-4 py-6 flex flex-col gap-4">
+                <a href="#about" class="block">About</a>
+                <a href="#skills" class="block">Skills</a>
+                <a href="#services" class="block">Services</a>
+                <a href="#projects" class="block">Projects</a>
+                <a href="#contact" class="block">Contact</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main section goes here -->
+    <main class="pt-24" id="home">
+    <!-- hero section -->
+        <section id="hero" class="min-h-[70vh] flex flex-col items-center justify-center text-center px-6 py-12">
+            <div class="max-w-3xl">
+                <h1 class="text-3xl sm:text-4xl md:text-5xl font-extrabold mb-4">Hi 👋, I&apos;m <span class="text-amber-400">Roland Zogbay</span></h1>
+                <p class="text-slate-300 text-lg sm:text-xl mb-6">I build modern, fast, and visually stunning digital experiences for clients and projects focused on usability and performance.</p>
+
+                <div class="mb-6">
+                    <span id="typed" class="inline-block min-w-[200px] h-[1.5em] overflow-hidden whitespace-nowrap text-amber-400 font-semibold tracking-wide text-3xl"></span>
+                </div>
+
+                <div class="flex flex-col sm:flex-row items-center gap-4 justify-center">
+                    <a href="#contact" class="rounded-lg px-5 py-3 bg-amber-400 text-white font-bold uppercase hover:bg-amber-300hover:text-white transition">Hire Me</a>
+                    <a href="./src/My Cv.docx" class="rounded-lg px-5 py-3 border border-slate-700 text-slate-200 hover:bg-slate-800 transition" download="MyCv">Download CV</a>
+                </div>
+
+                <div class="mt-8">
+                    <button id="scrollDown" aria-label="Scroll down" class="animate-bounce p-3 mt-1 hover:bg-amber-400 transition ease-in-out duration-500 rounded-full bg-slate-800">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-10">
+                            <path fill-rule="evenodd" d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25Zm-.53 14.03a.75.75 0 0 0 1.06 0l3-3a.75.75 0 1 0-1.06-1.06l-1.72 1.72V8.25a.75.75 0 0 0-1.5 0v5.69l-1.72-1.72a.75.75 0 0 0-1.06 1.06l3 3Z" clip-rule="evenodd" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section Goes here -->
+        <!-- ABOUT -->
+        <section id="about" class="py-12 px-6 sm:-mt-23 md:mt-4">
+            <div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-8 items-center mt-12">
+                <div class="space-y-4">
+                <h2 class="text-5xl sm:6xl text-center font-bold text-yellow-400 uppercase">About Me</h2>
+                <p class="text-slate-300 text-lg">I&apos;m Roland, a 24-year-old Web Developer and Designer from Liberia. I specialise in frontend development, UI/UX, and creating polished, user-centered interfaces. I enjoy transforming ideas into accessible, responsive experiences and continuously learning modern web technologies.</p>
+
+                <div class="grid grid-cols-2 gap-4 mt-4">
+                    <div class="bg-[#111827] p-4 rounded-lg">
+                    <p class="text-sm text-slate-400">Location</p>
+                    <p class="font-semibold">Mickey's Gray Junction</p>
+                    <p class="font-semibold">Duport-road, Paynesville</p>
+                    <p class="font-semibold">Monrovia, Liberia</p>
+                    </div>
+                    <div class="bg-[#111827] p-4 rounded-lg">
+                    <p class="text-sm text-slate-400">Education</p>
+                    <ul class="font-semibold">
+                        <li>Starz University — System Admin</li>
+                        <li>Mobile App Development - CS4Academy</li>
+                        <li>Fullstack WebDeveloper - Currently</li>
+                    </ul>
+                    </div>
+                    <div class="bg-[#111827] p-4 rounded-lg">
+                    <p class="text-sm text-slate-400">Role</p>
+                    <p class="font-semibold">Frontend Developer</p>
+                    <p class="font-semibold">Backend Developer</p>
+                    </div>
+                    <div class="bg-[#111827] p-4 rounded-lg">
+                    <p class="text-sm text-slate-400">Experience</p>
+                    <p class="font-semibold">3+ Years of Experience</p>
+                    </div>
+                </div>
+
+                <div class="mt-6 flex gap-4">
+                    <a href="#projects" class="px-4 py-2 bg-transparent border border-slate-700 rounded hover:bg-slate-800">View Projects</a>
+                    <a href="#contact" class="px-4 py-2 bg-amber-400 text-base  font-bold text-[#0F172A] rounded">Get in Touch</a>
+                </div>
+                </div>
+                <div class="mx-auto w-45 h-45 sm:w-64 sm:h-64 rounded-2xl overflow-hidden shadow-lg transform transition hover:scale-105 will-change-transform">
+                    <img src="./src/assets/image1.jpg" alt="Roland Portrait" class="w-full h-full object-cover" />
+                </div>
+            </div>
+        </section>
+
+    <!-- SKILLS -->
+        <section id="skills" class="py-12 px-6 bg-[#0B1220]">
+            <div class="max-w-7xl mx-auto text-center mt-10">
+                <h3 class="text-4xl font-bold text-yellow-400 mb-4">Skills & Tools</h3>
+                <p class="text-slate-300 mb-6">Technologies and tools I work with regularly.</p>
+
+                <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4">
+                <!-- Skill card (repeat) -->
+                <div class="skill-card bg-[#0F172A] p-4 rounded-lg border border-slate-800">
+                    <div class="flex items-center gap-3">
+                    <div class="w-10 h-10 rounded bg-slate-800 flex items-center justify-center text-4xl">
+                        <i class="fa-brands fa-html5"></i>
+                    </div>
+                    <div>
+                        <p class="font-semibold">HTML</p>
+                        <div class="w-full bg-slate-900 rounded h-2 mt-2 overflow-hidden">
+                        <div class="skill-bar h-2 rounded bg-[#ff9100] w-[100%]"></div>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+
+                <div class="skill-card bg-[#0F172A] p-4 rounded-lg border border-slate-800">
+                    <div class="flex items-center gap-3">
+                    <div class="w-10 h-10 rounded bg-slate-800 flex items-center justify-center text-4xl">
+                        <i class="fa-brands fa-css3-alt"></i>
+                    </div>
+                    <div>
+                        <p class="font-semibold">CSS</p>
+                        <div class="w-full bg-slate-900 rounded h-2 mt-2 overflow-hidden">
+                        <div class="skill-bar h-2 rounded bg-[#ff9100] w-[100%]"></div>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+
+                <div class="skill-card bg-[#0F172A] p-4 rounded-lg border border-slate-800">
+                    <div class="flex items-center gap-3">
+                    <div class="w-10 h-10 rounded bg-slate-800 flex items-center justify-center text-4xl">
+                        <i class="fa-brands fa-js"></i>
+                    </div>
+                    <div>
+                        <p class="font-semibold">JavaScript</p>
+                        <div class="w-full bg-slate-900 rounded h-2 mt-2 overflow-hidden">
+                        <div class="skill-bar h-2 rounded bg-[#ff9100] w-[90%]"></div>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+
+                <div class="skill-card bg-[#0F172A] p-4 rounded-lg border border-slate-800">
+                    <div class="flex items-center gap-3">
+                    <div class="w-10 h-10 rounded bg-slate-800 flex items-center justify-center">TW</div>
+                    <div>
+                        <p class="font-semibold">Tailwind</p>
+                        <div class="w-full bg-slate-900 rounded h-2 mt-2 overflow-hidden">
+                        <div class="skill-bar h-2 rounded bg-[#ff9100] w-[88%]"></div>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+
+                <!-- Add more skills as needed -->
+                </div>
+            </div>
+        </section>
+
+        <!-- SERVICES -->
+        <section id="services" class="py-12 px-6">
+            <div class="max-w-7xl mx-auto text-center mt-12">
+                <h3 class="text-4xl font-bold text-yellow-400 mb-4">What I <span class="text-white"> Offer? </span></h3>
+                <p class="text-slate-300 mb-6">I provide a range of services to help bring your ideas to life.</p>
+
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                    <article class="service-card bg-[#0F172A] border border-slate-800 p-6 rounded-lg hover:translate-y-[-6px] transition will-change-transform">
+                        <i class="fa-solid fa-code text-3xl text-amber-400"></i>
+                        <h4 class="font-semibold mb-2">Web Design & Development</h4>
+                        <p class="text-slate-300">Designing modern, responsive websites with a focus on performance and accessibility.</p>
+                    </article>
+
+                    <article class="service-card bg-[#0F172A] border border-slate-800 p-6 rounded-lg hover:translate-y-[-6px] transition will-change-transform">
+                        <i class="fas fa-pen text-amber-400 text-3xl"></i>
+                        <h4 class="font-semibold mb-2">UI / UX Design</h4>
+                        <p class="text-slate-300">Creating intuitive interfaces and user flows for delightful experiences.</p>
+                    </article>
+
+                    <article class="service-card bg-[#0F172A] border border-slate-800 p-6 rounded-lg hover:translate-y-[-6px] transition will-change-transform">
+                        <i class="fas fa-palette text-amber-400 text-4xl"></i>
+                        <h4 class="font-semibold mb-2">Branding & Graphic Design</h4>
+                        <p class="text-slate-300">Logos, layouts, and visual systems that communicate your story effectively.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Porfolio section -->
+        <section id="projects" class="py-12 px-6 bg-[#0B1220]">
+            <div class="max-w-7xl mx-auto mt-12">
+                <div class="md:flex justify-between mb-6">
+                    <div class="items-center mb-4">
+                        <h3 class="text-4xl  font-bold text-yellow-400">My Projects</h3>
+                        <p class="text-slate-300">Selected works with focus on frontend, UI, and design.</p>
+                    </div>
+                    <div class="md:flex  gap-2">
+                        <button class="filter-btn px-3 py-1 rounded text-sm border border-slate-700" data-filter="all">All</button>
+                        <button class="filter-btn px-3 py-1 rounded text-sm border border-slate-700" data-filter="web">Web</button>
+                        <button class="filter-btn px-3 py-1 rounded text-sm border border-slate-700" data-filter="design">Design</button>
+                    </div>
+                </div>
+
+                <div id="projectsGrid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+
+                <!-- Project Card (repeat) -->
+                <article class="project-card bg-[#0F172A] rounded-lg overflow-hidden border border-slate-800" data-category="web">
+                    <img src="./src/assets/land.jpeg" alt="Project 1" class="w-full h-48 object-cover" />
+                    <div class="p-4">
+                    <h4 class="font-semibold">Landing Page</h4>
+                    <p class="text-sm text-slate-400">A modern landing page for a fictional startup.</p>
+                    
+                    <div class="mt-3 flex items-center justify-between">
+                        <div class="text-xs text-slate-500">Web App</div>
+                        <button class="openProject text-sm px-3 py-1 border border-slate-700 rounded">View</button>
+                    </div>
+                    </div>
+                </article>
+
+                <article class="project-card bg-[#0F172A] rounded-lg overflow-hidden border border-slate-800" data-category="design">
+                    <img src="./src/assets/task-tracker-mock-up.png" alt="Project 2" class="w-full h-48 object-cover" />
+                    <div class="p-4">
+                    <h4 class="font-semibold">Task Tracker</h4>
+                    <p class="text-sm text-slate-400">A simple task tracker that keep track of user task.</p>
+                    <div class="mt-3 flex items-center justify-between">
+                        <div class="text-xs text-slate-500">Web App</div>
+                        <button class="openProject text-sm px-3 py-1 border border-slate-700 rounded">View</button>
+                    </div>
+                    </div>
+                </article>
+                <article class="project-card bg-[#0F172A] rounded-lg overflow-hidden border border-slate-800" data-category="design">
+                    <img src="./src/assets/task-tracker-mock-up.png" alt="Project 2" class="w-full h-48 object-cover" />
+                    <div class="p-4">
+                    <h4 class="font-semibold">Task Tracker</h4>
+                    <p class="text-sm text-slate-400">A simple task tracker that keep track of user task.</p>
+                    <div class="mt-3 flex items-center justify-between">
+                        <div class="text-xs text-slate-500">Web App</div>
+                        <button class="openProject text-sm px-3 py-1 border border-slate-700 rounded">View</button>
+                    </div>
+                    </div>
+                </article>
+                <article class="project-card bg-[#0F172A] rounded-lg overflow-hidden border border-slate-800" data-category="design">
+                    <img src="./src/assets/task-tracker-mock-up.png" alt="Project 2" class="w-full h-48 object-cover" />
+                    <div class="p-4">
+                    <h4 class="font-semibold">Task Tracker</h4>
+                    <p class="text-sm text-slate-400">A simple task tracker that keep track of user task.</p>
+                    <div class="mt-3 flex items-center justify-between">
+                        <div class="text-xs text-slate-500">Web App</div>
+                        <button class="openProject text-sm px-3 py-1 border border-slate-700 rounded">View</button>
+                    </div>
+                    </div>
+                </article>
+                <article class="project-card bg-[#0F172A] rounded-lg overflow-hidden border border-slate-800" data-category="web">
+                    <img src="./src/assets/task-tracker-mock-up.png" alt="Project 2" class="w-full h-48 object-cover" />
+                    <div class="p-4">
+                    <h4 class="font-semibold">Task Tracker</h4>
+                    <p class="text-sm text-slate-400">A simple task tracker that keep track of user task.</p>
+                    <div class="mt-3 flex items-center justify-between">
+                        <div class="text-xs text-slate-500">Web App</div>
+                        <button class="openProject text-sm px-3 py-1 border border-slate-700 rounded">View</button>
+                    </div>
+                    </div>
+                </article>
+                <article class="project-card bg-[#0F172A] rounded-lg overflow-hidden border border-slate-800" data-category="web">
+                    <img src="./src/assets/task-tracker-mock-up.png" alt="Project 2" class="w-full h-48 object-cover" />
+                    <div class="p-4">
+                    <h4 class="font-semibold">Task Tracker</h4>
+                    <p class="text-sm text-slate-400">A simple task tracker that keep track of user task.</p>
+                    <div class="mt-3 flex items-center justify-between">
+                        <div class="text-xs text-slate-500">Web App</div>
+                        <button class="openProject text-sm px-3 py-1 border border-slate-700 rounded">View</button>
+                    </div>
+                    </div>
+                </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- TESTIMONIALS -->
+        <div class="relative overflow-hidden w-full">
+            <div class="carousel-track flex transition-transform duration-700 ease-in-out">
+                <!-- Card 1 -->
+                <div class="min-w-[50%] flex-shrink-0 p-4 w-full sm:w-1/2">
+                    <div class="bg-slate-800 text-white rounded-2xl p-6 shadow-lg flex">
+                        <img class="w-20 h-20 rounded-full" src="./src/assets/image1.jpg" alt="image1">
+                        <div class="ml-2">
+                            <p>"His designs are modern, clean, and very user-friendly."</p>
+                            <h3 class="text-center mt-4 font-semibold text-amber-400">Sarah Smith</h3>
+                        </div>
+                    </div>
+                </div>
+                <!-- Card 2 -->
+                <div class="min-w-[50%] flex-shrink-0 p-4 w-full sm:w-1/2">
+                    <div class="bg-slate-800 text-white rounded-2xl p-6 shadow-lg flex">
+                        <img class="w-20 h-20 rounded-full" src="./src/assets/image1.jpg" alt="image1">
+                        <div class="ml-2">
+                            <p>"His designs are modern, clean, and very user-friendly."</p>
+                            <h3 class="text-center mt-4 font-semibold text-amber-400">Mary Brown</h3>
+                        </div>
+                    </div>
+                </div>
+                <!-- Card 3 -->
+                <div class="min-w-[50%] flex-shrink-0 p-4 w-full sm:w-1/2">
+                    <div class="bg-slate-800 text-white rounded-2xl p-6 shadow-lg flex">
+                        <img class="w-20 h-20 rounded-full" src="./src/assets/image1.jpg" alt="image1">
+                        <div class="ml-2">
+                            <p>"His designs are modern, clean, and very user-friendly."</p>
+                            <h3 class="text-center mt-4 font-semibold text-amber-400">James Brown</h3>
+                        </div>
+                    </div>
+                </div>
+                <!-- Card4 -->
+                <div class="min-w-[50%] flex-shrink-0 p-4 w-full sm:w-1/2">
+                    <div class="bg-slate-800 text-white rounded-2xl p-6 shadow-lg flex">
+                        <img class="w-20 h-20 rounded-full" src="./src/assets/img2.jpg" alt="image1">
+                        <div class="ml-2">
+                            <p>"His designs are modern, clean, and very user-friendly."</p>
+                            <h3 class="text-center mt-4 font-semibold text-amber-400">Jerry Brown</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+         <!-- Call to action section -->
+        <section id="cta" class="py-12 px-6 bg-gradient-to-r from-[#12203a] to-[#081223] text-center">
+            <div class="max-w-4xl mx-auto">
+                <h3 class="text-2xl font-bold mb-2">Ready to build something together?</h3>
+                <p class="text-slate-300 mb-4">I&apos;m available for freelance or full-time opportunities. Let&apos;s talk about your project.</p>
+                <a href="#contact" class="inline-block px-6 py-3 rounded bg-amber-400 text-white font-semibold">Contact Me</a>
+            </div>
+        </section>
+
+        <!-- Contact section -->
+        <section id="contact" class="py-12 px-6 bg-[#081022]">
+            <div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-8 mt-12">
+                <div>
+                    <h3 class="text-4xl font-bold text-yellow-400 mb-4">Get In Touch</h3>
+                    <p class="text-slate-300 mb-6">Got a project, collaboration, or just want to say hi? Fill the form and I&apos;ll get back to you.</p>
+                    <form id="contactForm" class="space-y-4 bg-[#0F172A] p-6 rounded-lg border border-slate-800">
+                        <div>
+                            <label class="block text-sm text-slate-400">Name</label>
+                            <input type="text" id="name" required class="mt-1 w-full rounded bg-[#081022] p-3 border border-slate-700 focus:outline-none focus:ring-2 focus:ring-[#38BDF8]" />
+                        </div>
+                        <div>
+                            <label class="block text-sm text-slate-400">Email</label>
+                            <input type="email" id="email" required class="mt-1 w-full rounded bg-[#081022] p-3 border border-slate-700 focus:outline-none focus:ring-2 focus:ring-[#38BDF8]" />
+                        </div>
+                        <div>
+                            <label class="block text-sm text-slate-400">Message</label>
+                            <textarea id="message" rows="5" required class="mt-1 w-full rounded bg-[#081022] p-3 border border-slate-700 focus:outline-none focus:ring-2 focus:ring-[#38BDF8]"></textarea>
+                        </div>
+                        <div>
+                        <button type="submit" class="px-5 py-3 bg-amber-400 text-white rounded font-semibold">Send Message</button>
+                        </div>
+                    </form>
+                </div>
+
+                <div class="space-y-4">
+                    <div class="bg-[#0F172A] p-6 rounded-lg border border-slate-800">
+                        <h4 class="font-semibold text-2xl">Contact Info</h4>
+                        <p class="text-slate-300 mt-2">Email: <a href="mailto:roland@gmail.com" class="text-[#38BDF8]">roland@gmail.com</a></p>
+                        <p class="text-slate-300">Phone: <a href="tel:+231776530052" class="text-[#38BDF8]">+231776530052</a></p>
+                        <p class="text-slate-300">Location: Monrovia, Liberia</p>
+                    </div>
+
+                    <div class="bg-[#0F172A] p-6 rounded-lg border border-slate-800">
+                        <h4 class="font-semibold">Follow</h4>
+                        <div class="flex gap-3 mt-3">
+                        <a href="#" class="p-2 rounded bg-slate-800 hover:text-amber-400 text-2xl transition ease-in"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="#" class="p-2 rounded bg-slate-800 hover:text-amber-400 text-2xl transition ease-in"><i class="fa-brands fa-square-x-twitter"></i></a>
+                        <a href="#" class="p-2 rounded bg-slate-800 hover:text-amber-400 text-2xl transition ease-in"><i class="fa-brands fa-github"></i></a>
+                        <a href="#" class="p-2 rounded bg-slate-800 transition ease-in hover:text-amber-400 text-2xl"><i class="fa-brands fa-facebook"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- FOOTER -->
+        <footer class="py-8 px-6 bg-[#071221]">
+            <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-6 items-center">
+                <div>
+                    <p class="font-semibold text-xl">Roland Zogbay</p>
+                    <p class="text-sm text-slate-400">Designed & built by Roland</p>
+                </div>
+                <div class="text-center">
+                    <p class="text-xl text-gray-100">Quick Links</p>
+                    <div class="flex gap-3 justify-center mt-2">
+                        <a href="#home" class="text-sm">Home</a>
+                        <a href="#projects" class="text-sm">Projects</a>
+                        <a href="#contact" class="text-sm">Contact</a>
+                    </div>
+                </div>
+                <div class="text-right hidden md:block">
+                    <p class=" text-gray-100 text-xl">© <span id="year"></span> Roland Zogbay</p>
+                </div>
+            </div>
+        </footer>
+         <!-- Button to top -->
+        <button id="backToTop" class="fixed bottom-6 right-6 p-3 rounded-full bg-[#111827] hidden">
+            <i class="fa-solid fa-arrow-up text-white"></i>
+        </button>
+    </main>
+
+    <!-- Simple modal for project preview -->
+    <div id="projectModal" class="fixed inset-0 hidden items-center justify-center z-50 bg-black bg-opacity-60">
+        <div class="bg-[#0B1220] max-w-3xl w-full rounded-lg overflow-hidden">
+        <div class="p-4 flex items-start justify-between">
+            <h4 class="font-semibold">Project Preview</h4>
+            <button id="closeModal" class="p-2">✕</button>
+        </div>
+        <div id="modalContent" class="p-4">
+            <!-- filled by JS -->
+        </div>
+        </div>
+    </div>
+    <!-- Link to custom Js file -->
+    <script src="./src/script.js"></script>
+</body>
+</html>
